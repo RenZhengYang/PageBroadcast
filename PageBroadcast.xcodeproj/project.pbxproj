@@ -13,9 +13,13 @@
 		A55ECE4122412F7200451513 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A55ECE4022412F7200451513 /* Assets.xcassets */; };
 		A55ECE4422412F7200451513 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A55ECE4222412F7200451513 /* LaunchScreen.storyboard */; };
 		A55ECE4722412F7200451513 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A55ECE4622412F7200451513 /* main.m */; };
+		A55ECE532241301D00451513 /* ZYPageBrocastCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = A55ECE522241301D00451513 /* ZYPageBrocastCollectionView.m */; };
+		A55ECE562241306D00451513 /* ZYPageBroadcastView.m in Sources */ = {isa = PBXBuildFile; fileRef = A55ECE552241306D00451513 /* ZYPageBroadcastView.m */; };
+		A55ECE59224133C600451513 /* ZYPageBroadcastCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A55ECE58224133C600451513 /* ZYPageBroadcastCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A517B53D2241E8630026335B /* pageBroadcast.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pageBroadcast.h; sourceTree = "<group>"; };
 		A55ECE3422412F7000451513 /* PageBroadcast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PageBroadcast.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A55ECE3722412F7000451513 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A55ECE3822412F7000451513 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -26,6 +30,12 @@
 		A55ECE4322412F7200451513 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A55ECE4522412F7200451513 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A55ECE4622412F7200451513 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A55ECE512241301D00451513 /* ZYPageBrocastCollectionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYPageBrocastCollectionView.h; sourceTree = "<group>"; };
+		A55ECE522241301D00451513 /* ZYPageBrocastCollectionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYPageBrocastCollectionView.m; sourceTree = "<group>"; };
+		A55ECE542241306D00451513 /* ZYPageBroadcastView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYPageBroadcastView.h; sourceTree = "<group>"; };
+		A55ECE552241306D00451513 /* ZYPageBroadcastView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYPageBroadcastView.m; sourceTree = "<group>"; };
+		A55ECE57224133C600451513 /* ZYPageBroadcastCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYPageBroadcastCell.h; sourceTree = "<group>"; };
+		A55ECE58224133C600451513 /* ZYPageBroadcastCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYPageBroadcastCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +68,7 @@
 		A55ECE3622412F7000451513 /* PageBroadcast */ = {
 			isa = PBXGroup;
 			children = (
+				A55ECE4D22412FC600451513 /* ZYPageBroadcast */,
 				A55ECE3722412F7000451513 /* AppDelegate.h */,
 				A55ECE3822412F7000451513 /* AppDelegate.m */,
 				A55ECE3A22412F7000451513 /* ViewController.h */,
@@ -69,6 +80,44 @@
 				A55ECE4622412F7200451513 /* main.m */,
 			);
 			path = PageBroadcast;
+			sourceTree = "<group>";
+		};
+		A55ECE4D22412FC600451513 /* ZYPageBroadcast */ = {
+			isa = PBXGroup;
+			children = (
+				A55ECE4E22412FC600451513 /* ViewModel */,
+				A55ECE4F22412FC600451513 /* Model */,
+				A55ECE5022412FC600451513 /* Views */,
+			);
+			path = ZYPageBroadcast;
+			sourceTree = "<group>";
+		};
+		A55ECE4E22412FC600451513 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A55ECE4F22412FC600451513 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A55ECE5022412FC600451513 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A55ECE512241301D00451513 /* ZYPageBrocastCollectionView.h */,
+				A55ECE522241301D00451513 /* ZYPageBrocastCollectionView.m */,
+				A55ECE542241306D00451513 /* ZYPageBroadcastView.h */,
+				A55ECE552241306D00451513 /* ZYPageBroadcastView.m */,
+				A55ECE57224133C600451513 /* ZYPageBroadcastCell.h */,
+				A55ECE58224133C600451513 /* ZYPageBroadcastCell.m */,
+				A517B53D2241E8630026335B /* pageBroadcast.h */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,6 +191,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A55ECE3C22412F7000451513 /* ViewController.m in Sources */,
+				A55ECE532241301D00451513 /* ZYPageBrocastCollectionView.m in Sources */,
+				A55ECE562241306D00451513 /* ZYPageBroadcastView.m in Sources */,
+				A55ECE59224133C600451513 /* ZYPageBroadcastCell.m in Sources */,
 				A55ECE4722412F7200451513 /* main.m in Sources */,
 				A55ECE3922412F7000451513 /* AppDelegate.m in Sources */,
 			);
